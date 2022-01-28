@@ -36,7 +36,7 @@ const ondaEnergetica = {
     this.y += canvas.height / 1200;
 
     if(this.x > canvas.width || this.y > canvas.height) this.x = this.y=0;
-    ctx.drawImage(this.img, 250, 0, 100, 100, this.x -90, this.y -14, 100, 100);
+    ctx.drawImage(this.img, 250, 0, 100, 100, this.x -90, this.y -14, 100, 100); // se le resta para ajustar el mouse con la imagen
     if (this.animating) {
       frameNumber = requestAnimationFrame(this.draw.bind(this));
 
@@ -53,8 +53,8 @@ canvas.addEventListener(
         ondaEnergetica.draw()
     }
     )
-
 */
+
 canvas.addEventListener(
     "mousemove",
     (event)=>{
